@@ -1,4 +1,3 @@
-
     const submitButton = document.getElementById("submit");
     const popup = document.getElementById("popup");
     const popup2 = document.getElementById("popup2");
@@ -11,6 +10,7 @@
     const popup9 = document.getElementById("popup9");
     const popup10 = document.getElementById("popup10");
     const popup11 = document.getElementById("popup11");
+     const popup12 = document.getElementById("popup12");
     const codeInput = document.getElementById("codes");
     const correctCode1 = "4563789";
     const correctCode2 = "5467868";
@@ -21,8 +21,9 @@
     const correctCode7 = "6542398";
     const correctCode8 = "1578423";
     const correctCode9 = "7632091";
-    const correctCode10 = "542896";
-    const correctCode11 = "987522"
+    const correctCode10 = "2542896";
+    const correctCode11 = "2987522";
+    const correctCode12 = "8896341";
 
     const submitBtn = document.getElementById("submit");
 
@@ -50,6 +51,8 @@
         popup10.classList.add("show");
       } else if (enteredCode === correctCode11){
         popup11.classList.add("show");
+      } else if (enteredCode === correctCode12){
+        popup12.classList.add("show");
       }
     });
 
@@ -126,5 +129,12 @@
 
     closeBtn11.addEventListener("click", () => {
       popup11.classList.remove("show");
+      
+    });
+    
+    const closeBtn12 = document.querySelector(".close-btn12");
+
+    closeBtn12.addEventListener("click", () => {
+      popup12.classList.remove("show");
       
     });
